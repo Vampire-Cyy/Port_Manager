@@ -24,6 +24,9 @@
     <ClCompile Include="User.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Random_Producer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Container.h">

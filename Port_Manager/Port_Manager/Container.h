@@ -35,5 +35,8 @@ private:
 	const char* pw = "Cyy200577";
 	const char* database_name = "port_manager";
 	const int port = 3306;
+
+	void query_portion_1();
+	void query_portion_2();
 };
 

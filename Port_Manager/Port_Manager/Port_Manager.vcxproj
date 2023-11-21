@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClCompile Include="Container.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Random_Producer.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>

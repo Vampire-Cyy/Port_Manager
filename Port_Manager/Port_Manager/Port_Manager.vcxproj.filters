@@ -27,12 +27,18 @@
     <ClCompile Include="Random_Producer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Identity.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Container.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="User.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Identity.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

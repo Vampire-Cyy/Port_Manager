@@ -26,7 +26,6 @@ private:
 	string port_name;
 	string lading_id;
 	string action;
-	DATE action_date;
 
 	MYSQL* con;
 

@@ -20,7 +20,11 @@ Identity::~Identity()
 
 void Identity::insert_user()
 {
+	cout << "Please sign up an account!" << endl;
+
 	cin >> name >> email >> password;
+
+	cout << endl << endl << endl;
 	
 	char sql[1024];
 	sprintf(sql, "INSERT INTO users (name, email, password) VALUES('%s', '%s', CONCAT('*', UPPER(SHA1(UNHEX(SHA1('%s') ) ) ) ) )",
@@ -37,7 +41,9 @@ void Identity::insert_user()
 
 bool Identity::login_user()
 {
+	cout << "Please login your account!" << endl;
 	cin >> email >> password;
+	cout << endl << endl << endl;
 
 	char sql[1024];
 	sprintf(sql, "SELECT * FROM users WHERE email = '%s' AND password = CONCAT('*', UPPER(SHA1(UNHEX(SHA1('%s')))))",

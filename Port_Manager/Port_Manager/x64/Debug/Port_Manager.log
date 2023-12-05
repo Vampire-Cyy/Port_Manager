@@ -1,2 +1,7 @@
-﻿  main.cpp
+﻿  Identity.cpp
+C:\Users\Vampire\Desktop\Port_Manager\Port_Manager\Port_Manager\Identity.cpp(35,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Vampire\Desktop\Port_Manager\Port_Manager\Port_Manager\Identity.cpp(54,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Vampire\Desktop\Port_Manager\Port_Manager\Port_Manager\Identity.cpp(86,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Vampire\Desktop\Port_Manager\Port_Manager\Port_Manager\Identity.cpp(95,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\Vampire\Desktop\Port_Manager\Port_Manager\Port_Manager\Identity.cpp(79): warning C4715: “Identity::login_user”: 不是所有的控件路径都返回值
   Port_Manager.vcxproj -> C:\Users\Vampire\Desktop\Port_Manager\Port_Manager\x64\Debug\Port_Manager.exe

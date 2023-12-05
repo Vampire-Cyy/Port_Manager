@@ -22,9 +22,14 @@ void Identity::insert_user()
 {
 	cout << "Please sign up an account!" << endl;
 
-	cin >> name >> email >> password;
+	cout << "Name:";
+	cin >> name;
 
-	cout << endl << endl << endl;
+	cout << "Email:";
+	cin >> email;
+
+	cout << "Password:";
+	cin >> password;
 	
 	char sql[1024];
 	sprintf(sql, "INSERT INTO users (name, email, password) VALUES('%s', '%s', CONCAT('*', UPPER(SHA1(UNHEX(SHA1('%s') ) ) ) ) )",
@@ -35,7 +40,7 @@ void Identity::insert_user()
 		return;
 	}
 
-	cout << "Success to sign up an account!" << endl;
+	cout << "Success to sign up an account!" << endl << endl << endl;
 
 }
 
@@ -43,7 +48,7 @@ bool Identity::login_user()
 {
 	cout << "Please login your account!" << endl;
 	cin >> email >> password;
-	cout << endl << endl << endl;
+	cout << endl;
 
 	char sql[1024];
 	sprintf(sql, "SELECT * FROM users WHERE email = '%s' AND password = CONCAT('*', UPPER(SHA1(UNHEX(SHA1('%s')))))",
@@ -62,12 +67,12 @@ bool Identity::login_user()
 	{
 		if (row[0] == NULL)
 		{
-			cout << "Please sign in an account!" << endl;
+			cout << "Please sign up an account!" << endl;
 			return false;
 		}
 		else
 		{
-			cout << "Welcome to sign in " << row[0] << endl;
+			cout << "Welcome to sign in " << row[0] << "!" << endl << endl;
 			return true;
 		}
 	}

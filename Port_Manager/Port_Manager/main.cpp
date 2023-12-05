@@ -12,15 +12,24 @@ int main()
 
 	Identity::GetInstance()->insert_user();
 	
-	while (Identity::GetInstance()->login_user());
+	while (!Identity::GetInstance()->login_user());
 	
 	Container::GetInstance()->query_amount();
+	cout << endl << endl << endl;
 	Container::GetInstance()->query_tendency();
+	cout << endl << endl << endl;
 	Container::GetInstance()->query_portion();
+	cout << endl << endl << endl;
+	Container::GetInstance()->query_portion();
+	cout << endl << endl << endl;
 	Container::GetInstance()->query_direction();
+	cout << endl << endl << endl;
 	Container::GetInstance()->add_record();
+	cout << endl << endl << endl;
 	User::GetInstance()->add_user();
+	cout << endl << endl << endl;
 	User::GetInstance()->query_user();
-
+	cout << "Thanks for your using!" << endl;
+	cout << "See you next time!" << endl;
 	return 0;
 }

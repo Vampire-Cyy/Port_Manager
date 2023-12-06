@@ -39,6 +39,7 @@ int main()
 	User::GetInstance()->add_user();
 	cout << endl << endl << endl;
 	User::GetInstance()->query_user();
+	cout << endl << endl << endl;
 	cout << "Thanks for your using!" << endl;
 	cout << "See you next time!" << endl;
 	return 0;

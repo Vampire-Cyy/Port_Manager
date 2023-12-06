@@ -72,24 +72,28 @@ void User::add_user()
 {
 	char sql[5196];
 	User user;
-
+	cout << "Name:";
 	cin >> user.name; 
 
+	cout << "Id:"; 
 	cin >> user.id;
 	//检验身份证号是否符合
 	if (user.id.length() != 18)
 	{
-		cout << "Please enter legal id number";
+		cout << "Please enter legal id number" << endl;
 		return;
 	}
 
+	cout << "Phone:";
 	cin >> user.phone;
 	//检验手机号是否符合
 	if (user.phone.length() != 11) 
 	{
-		cout << "Please enter legal phone number";
+		cout << "Please enter legal phone number" << endl;
 		return;
 	}
+
+	cout << "Address:";
 	cin >> user.address;
 
 	//创建该项user数据
